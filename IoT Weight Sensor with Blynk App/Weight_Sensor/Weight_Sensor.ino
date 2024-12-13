@@ -9,10 +9,12 @@
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
 #include "HX711.h"
-HX711 scale(DOUT, CLK);
+
 
 #define DOUT  23
 #define CLK  19
+
+HX711 scale(DOUT, CLK);
 
 // Comment this out to disable prints and save space
 #define BLYNK_PRINT Serial
